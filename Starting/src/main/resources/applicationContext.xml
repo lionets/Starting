@@ -15,7 +15,7 @@
 	<description>Spring公共配置</description>
 	
 	<!-- 使用annotation 自动注册bean,并检查@Required,@Autowired的属性已被注入 -->
-	<context:component-scan base-package="com.huiwei.common">
+	<context:component-scan base-package="cn.com.start">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
 	</context:component-scan>
@@ -46,10 +46,10 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-		<property name="typeAliasesPackage" value="com.huiwei.common.model" />
+		<property name="typeAliasesPackage" value="cn.com.start.entity" />
 		<!-- 显式指定Mapper文件位置 -->
 		<property name="mapperLocations"
-			value="classpath*:/mybatis/com/huiwei/common/write/*Mapper.xml" />
+			value="classpath*:/cn/com/start/*Mapper.xml" />
 	</bean>
 	
 	
@@ -57,7 +57,7 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.huiwei.common.dao.write" />
 		<property name="annotationClass"
-			value="com.huiwei.common.db.mybatis.MyBatisRepository" />
+			value="cn.com.start.dao.MyBatisRepository" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 	<bean id="transactionManagerWrite"
@@ -75,10 +75,21 @@
 	<tx:annotation-driven transaction-manager="transactionManagerWrite" />
 	
 	
-	<bean id="sysConfig" class="com.huiwei.util.SysConfig"/>
+	<bean id="sysConfig" class="cn.com.start.utils.SysConfig"/>
 	<!-- 文件上传下载 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
 		<property name="maxUploadSize" value="10485760" />  
 	</bean>
+	
+	<!-- 国际化配置 -->   
+	<bean id="messageSource"   
+		class="org.springframework.context.support.ResourceBundleMessageSource">   
+	<property name="basename" value="locale.messages" />   
+	<!--locale 和 messages 的意义locale 是指src目录下 的 locale ，也就是语言包配置文件是放到 src/locale 下 以 messages开头，以properties 结尾的文件 src/locale/messages_zh_CN.properties--> 
+	</bean>   
+	  
+	<!-- 国际化配置 -->   
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />
+	
 	
 </beans>

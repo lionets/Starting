@@ -336,9 +336,9 @@ MyMar=setInterval(MarqueeDes,speed);
 </div>
 <!-- End #menu-content -->
 <!-- End #menu -->
-<div id="footer"> <small>達豐中國 地址：上海市长宁区天山西路1068号联强国际D栋4楼 电话:+86 21 60825373 </small><br />
+<div id="footer"> <small>南狮科技 地址：上海市徐汇区龙州路450弄55号2楼 电话:+86 21 28289418 </small><br />
   <br />
-  <small>系统开发 Copyright © 2015 上海乔罗网络科技有限公司 </small> </div>
+  <small>系统开发 Copyright © 2017 上海南狮科技有限公司 </small> </div>
   </div>
 </body>
 </html>

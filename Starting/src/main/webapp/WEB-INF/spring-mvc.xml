@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 	<!-- 自动扫描且只扫描@Controller -->
-	<context:component-scan base-package="com.huiwei.controller.app"
+	<context:component-scan base-package="cn.com.start.controller"
 		use-default-filters="false">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -76,12 +76,14 @@
 
 	<!-- 静态资源的处理 -->
 	<mvc:resources mapping="/static/**" location="/static/" />
+	<!-- 国际化拦截器配置 -->
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/*" />
             <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
         </mvc:interceptor>
     </mvc:interceptors>
+    
 	
 
 	<!-- end -->
