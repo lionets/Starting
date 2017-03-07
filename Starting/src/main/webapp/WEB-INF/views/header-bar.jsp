@@ -30,13 +30,13 @@
         <a class="purchase" href="<%=basePath %>company/init/tab1?tab1PageNum=0&tab1PerPage=10" title="<spring:message code="headerbar.setting"/>">
             <img src="<%=basePath %>static/images/icons/set_icon.png" style="width:16px; height:16px;"/>
         </a>
-        <a class="purchase" href="<%=basePath %>logout?locale=<spring:message code="sys.locale"/>"  title="<spring:message code="headerbar.logout"/>">
+        <a class="purchase" href="<%=basePath %>logout"  title="<spring:message code="headerbar.logout"/>">
             <img src="<%=basePath %>static/images/icons/logout_icon1.png" class="px16"/>
         </a>
     </div>
     <div class="clear"></div>
 </div>
-<div class="denglu" ><label>${loginCompanyShortName }</label>&nbsp;&nbsp;<label>${loginDepartmentName }</label>&nbsp;&nbsp;<label>${loginRealName }</label>&nbsp;&nbsp;|&nbsp;&nbsp;<label><a href="<%=basePath %>users/editPWDInit" target="main-iframe"  style="color:#555">修改密码</a></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label><a href="#" target="main-iframe"  style="color:#555">中文</a></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label><a href="#" target="main-iframe"  style="color:#555">英文</a></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label>
+<div class="denglu" ><label>${loginCompanyShortName }</label>&nbsp;&nbsp;<label>${loginDepartmentName }</label>&nbsp;&nbsp;<label>${loginRealName }</label>&nbsp;&nbsp;|&nbsp;&nbsp;<label><a href="<%=basePath %>users/editPWDInit" target="main-iframe"  style="color:#555">修改密码</a></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label><a href="<%=basePath %>index?locale=zh_CN" target="main-iframe"  style="color:#555">中文</a></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label><a href="<%=basePath %>index?locale=en_US" target="main-iframe"  style="color:#555">英文</a></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label>
 <a href="<%=basePath %>static/leap-userguide/index.html" target="blank"  style="color:#555">操作手册</a>
 </label></div>
 </div>
