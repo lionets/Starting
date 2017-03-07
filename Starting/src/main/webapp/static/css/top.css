@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+html body{width:100%;height:100%;padding:0px;margin:0px;font-size:10px;color:#6e6e6e;min-width:1300px;}
+#header-bar{height:80px;background:#444444 url(../images/byl-02.png) right no-repeat; background-size:1040px 80px;  }
+
+#header-bar .meta-data{padding:50px 30px 0 0px;margin:0px;float:right;}
+#header-bar div.meta-data p{display:inline;margin:0px;line-height:85px;}
+#header-bar div.meta-data a{text-decoration:none;color:#6e6e6e}
+#header-bar div.meta-data a.purchase{margin-left:10px;padding-left:15px}
+#header-bar div.meta-data a:hover,#header-bar p.meta-data a.activated{color:#fff}
+#header-bar div.todo{ display:inline-block; margin:40px 0 0 37px;}
+#header-bar div.todo ul {
+margin: 0;
+padding: 0;
+list-style: none;
+border-right: 1px solid #303f2e;
+border-left: 1px solid 242424;
+}
+#header-bar div.todo ul li {
+float: left;
+list-style-type: none;
+margin: 0;
+position: relative;
+padding: 0;
+border-left: 1px solid #303f2e;
+border-right: 1px solid #242424;
+}
+#header-bar div.todo ul li a {
+padding: 18px 12px 6px 12px ;
+display: block;
+font-size: 11px;
+color: #ccc;
+
+}
+li {
+line-height: 20px;
+text-align: -webkit-match-parent;
+}
+ul li a:hover {
+color: white;
+}
+#header-bar div.todo ul > li > a > .label {
+vertical-align: middle;
+padding: 1px 4px 1px;
+margin: -2px 4px 0;
+display: inline-block;
+font-weight: bold;
+line-height: 14px;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+white-space: nowrap;
+vertical-align: baseline;}
+.label-important, .badge-important {
+background: #F74D4D; color:#FFFFFF;
+}
+.label, .badge {
+padding: 2px 4px;
+}
+#header-bar .site-loopback{padding:20px 0 0 73px;;float:left;background:url(../images/tathonglogo4.png) 60px 15px no-repeat;
+			    background-size:50px 50px; }
+#header-bar .logo_title{font-weight:normal; padding:13px 40px 10px 50px;}
+#header-bar h1{ font-family:  "Microsoft YaHei","微软雅黑", sans-serif;
+font-size: 31px;
+font-weight: bold;
+color: white;
+position: absolute;
+top: -1000px;}
+#preview-frame{width:100%;}
+

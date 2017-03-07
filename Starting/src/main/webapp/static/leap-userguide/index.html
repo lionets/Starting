@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>塔机动态管理系统</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="resources/css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="resources/css/top.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="resources/css/invalid.css" type="text/css" media="screen" />
+<script type="text/javascript" src="resources/scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="resources/scripts/facebox.js"></script>
+<script type="text/javascript" src="resources/scripts/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="resources/scripts/jquery.datePicker.js"></script>
+<script type="text/javascript" src="resources/scripts/jquery.date.js"></script>
+<script type="text/javascript"src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="resources/scripts/jquery.bgiframe.js"></script><![endif]-->
+<!-- Internet Explorer .png-fix -->
+</head>
+<body style="background: url('../../images/login-bg.png') bottom;">
+<div id="header-bar" style="min-width:980px;">
+  <div class="site-loopback" >
+   <a href="#" title="LEAP"><img id="logo" src="resources/images/logo6.png" alt="LEAP" style="padding-left:28px;"/></a> </div>
+ <!-- <div class="todo">
+    <ul>
+      <li><a href="asset/receiving_query.html" target="main-iframe">资产到货<span class="label label-important">5</span> </a></li>
+      <li><a href="dispatch/dispatch_query.html" target="main-iframe">待调度<span class="label label-important">4</span> </a></li>
+      <li><a href="dispatch/dispatch_query.html" target="main-iframe">待签核<span class="label label-important">5</span> </a></li>
+    </ul>
+  </div>-->
+
+  <div class="clear"></div>
+</div>
+
+<div id="body-wrapper">
+  <!-- Wrapper for the radial gradient background -->
+  <div id="sidebar">
+    <div id="sidebar-wrapper">
+      <!-- Sidebar with logo and menu -->
+      <br/>
+      <br/>
+      <!-- Sidebar Profile links -->
+      <ul id="main-nav">
+        <!-- Accordion Menu -->
+        <li> <a href="#" class="nav-top-item current" title="功能">
+          <label class="menulabel">1、功能</label>
+          <img src="resources/images/icons/64x64/computer-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a  href="content/gongneng.html" target="main-iframe">1.1功能</a></li>
+            <li><a href="content/denglu.html"  target="main-iframe">1.2登录页</a></li>
+            <li><a href="content/shouye.html"  target="main-iframe">1.3菜单页</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="采购">
+          <label class="menulabel">2、采购</label>
+          <img src="resources/images/icons/64x64/icon-19.png" class="px48"/> </a>
+          <ul>
+            <li><a  href="2/2.1.html" target="main-iframe">2.1采购合同</a></li>
+            <li><a  href="2/2.1.1.html" target="main-iframe">2.1.1新增（编辑）采购合同</a></li>
+            <li><a  href="2/2.2.html" target="main-iframe">2.2外租合同</a></li>
+            <li><a  href="2/2.2.1.html" target="main-iframe">2.2.1新增（编辑）外租合同</a></li>
+            <li><a  href="2/2.3.html" target="main-iframe">2.1资产到货</a></li>
+            <li><a  href="2/2.3.1.html" target="main-iframe">2.3.1编辑资产到货</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="项目">
+          <label class="menulabel">3、项目</label>
+          <img src="resources/images/icons/64x64/package-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="3/3.1.html" target="main-iframe">3.1项目资产</a></li>
+            <li><a href="3/3.1.1.html" target="main-iframe">3.1.1新增(编辑)项目资产</a></li>
+            <li><a href="3/3.2.html"  target="main-iframe">3.2合同信息</a></li>
+            <li><a href="3/3.2.1.html"  target="main-iframe">3.2.1新增(编辑)合同信息</a></li>
+            <li><a href="3/3.2.2.html"  target="main-iframe">3.2.2填写设备日程</a></li>
+            <li><a href="3/3.3.html" target="main-iframe">3.3项目进度</a></li>
+            <li><a href="3/3.3.1.html" target="main-iframe">3.3.1编辑项目进度</a></li>
+            <li><a href="3/3.4.html"  target="main-iframe">3.4租赁意向</a></li>
+            <li><a href="3/3.4.1.html"  target="main-iframe">3.4.1新增(编辑)租赁意向</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="调度管理">
+          <label class="menulabel">4、调度管理</label>
+          <img src="resources/images/icons/64x64/refresh-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="4/4.1.html"  target="main-iframe">4.1资产调度</a></li>
+            <li><a href="4/4.1.1.html"  target="main-iframe">4.1.1新增(编辑)资产调度</a></li>
+            <li><a href="4/4.2.html"  target="main-iframe">4.2项目方案</a></li>
+            <li><a href="4/4.2.1.html"  target="main-iframe">4.2.1编辑项目方案</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="安检维修">
+          <label class="menulabel">5、安检维修</label>
+          <img src="resources/images/icons/64x64/maintenance-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="5/5.1.html"  target="main-iframe">5.1安全检查</a></li>
+            <li><a href="5/5.1.1.html"  target="main-iframe">5.1.1新增(编辑)安全检查</a></li>
+            <li><a href="5/5.2.html"  target="main-iframe">5.2设备维修</a></li>
+            <li><a href="5/5.2.1.html"  target="main-iframe">5.2.1新增(编辑)设备维修</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="处置归还">
+          <label class="menulabel">6、处置归还</label>
+          <img src="resources/images/icons/64x64/go-back-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="6/6.1.html"  target="main-iframe">6.1资产处置</a></li>
+            <li><a href="6/6.1.1.html"  target="main-iframe">6.1.1新增(编辑)资产处置</a></li>
+            <li><a href="6/6.2.html"  target="main-iframe">6.2资产归还</a></li>
+            <li><a href="6/6.2.1.html"  target="main-iframe">6.2.1新增(编辑)资产归还</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="经营看板">
+          <label class="menulabel">7、经营看板</label>
+          <img src="resources/images/icons/64x64/Pie-chart-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="7/7.1.html"  target="main-iframe">7.1塔机分布总览</a></li>
+            <li><a href="7/7.2.html"  target="main-iframe">7.2闲置塔机总览</a></li>
+            <li><a href="7/7.3.html"  target="main-iframe">7.3租赁意向总览</a></li>
+            
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="报表">
+          <label class="menulabel">8、报表</label>
+           <img src="resources/images/icons/64x64/system-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="8/8.1.html"  target="main-iframe">8.1项目信息汇总表</a></li>
+            <li><a href="8/8.2.html"  target="main-iframe">8.2设备配置动态表</a></li>
+            <li><a href="8/8.3.html"  target="main-iframe">8.3设备动态汇总表</a></li>
+            <li><a href="8/8.4.html"  target="main-iframe">8.4设备闲置报表</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="基础信息">
+          <label class="menulabel">9、基础信息</label>
+          <img src="resources/images/icons/64x64/file-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="9/9.1.html"  target="main-iframe">9.1客户资料</a></li>
+            <li><a href="9/9.1.1.html"  target="main-iframe">9.1.1新增(编辑)客户资料</a></li>
+            <li><a href="9/9.2.html"  target="main-iframe">9.2塔机资料</a></li>
+            <li><a href="9/9.2.1.html"  target="main-iframe">9.2.1查看塔机资料</a></li>
+            <li><a href="9/9.2.2.html"  target="main-iframe">9.2.2编辑塔机资料</a></li>
+            <li><a href="9/9.3.html"  target="main-iframe">9.3部件资料</a></li>
+            <li><a href="9/9.3.1.html"  target="main-iframe">9.3.1查看部件资料</a></li>
+            <li><a href="9/9.4.html"  target="main-iframe">9.4仓库资料</a></li>
+            <li><a href="9/9.4.1.html"  target="main-iframe">9.4.1新增(编辑)仓库资料</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="GPS管理">
+          <label class="menulabel">10、GPS管理</label>
+          <img src="resources/images/icons/64x64/satellite-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="10/10.1.html"  target="main-iframe">10.1设备地图</a></li>
+            <li><a href="10/10.1.1.html"  target="main-iframe">10.1.1查看设备位置</a></li>
+            <li><a href="10/10.2.html"  target="main-iframe">10.2历史轨迹</a></li>
+            <li><a href="10/10.3.html"  target="main-iframe">10.3人工定位</a></li>
+            <li><a href="10/10.3.1.html"  target="main-iframe">10.3.1编辑人工定位</a></li>
+            <li><a href="10/10.4.html"  target="main-iframe">10.4GPS维修</a></li>
+            <li><a href="10/10.4.1.html"  target="main-iframe">10.4.1新增(编辑)GPS维修</a></li>
+            <li><a href="10/10.5.html"  target="main-iframe">10.5GPS管理</a></li>
+            <li><a href="10/10.5.1.html"  target="main-iframe">10.5.1新增(编辑)GPS管理</a></li>
+            <li><a href="10/10.6.html"  target="main-iframe">10.6信令发送</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="nav-top-item" title="系统设置">
+          <label class="menulabel">11、系统设置</label>
+          <img src="resources/images/icons/64x64/preferences-icon.png" class="px48"/> </a>
+          <ul>
+            <li><a href="11/11.1.html"  target="main-iframe">11.1公司管理</a></li>
+            <li><a href="11/11.1.1.html"  target="main-iframe">11.1.1新增(编辑)公司管理</a></li>
+            <li><a href="11/11.2.html"  target="main-iframe">11.2部门管理</a></li>
+            <li><a href="11/11.2.1.html"  target="main-iframe">11.2.1新增(编辑)部门</a></li>
+            <li><a href="11/11.3.html"  target="main-iframe">11.3用户管理</a></li>
+            <li><a href="11/11.3.1.html"  target="main-iframe">11.3.1新增(编辑)用户</a></li>
+            <li><a href="11/11.4.html"  target="main-iframe">11.4职务管理</a></li>
+            <li><a href="11/11.4.1.html"  target="main-iframe">11.4.1新增(编辑)职务</a></li>
+            <li><a href="11/11.5.html"  target="main-iframe">11.5角色管理</a></li>
+            <li><a href="11/11.5.1.html"  target="main-iframe">11.5.1新增(编辑)角色</a></li>
+            <li><a href="11/11.6.html"  target="main-iframe">11.6公共资料</a></li>
+            <li><a href="11/11.6.1.html"  target="main-iframe">11.6.1新增(编辑)公共资料</a></li>
+            <li><a href="11/11.7.html"  target="main-iframe">11.7部件管理</a></li>
+            <li><a href="11/11.7.1.html"  target="main-iframe">11.7.1新增(编辑)部件</a></li>
+            <li><a href="11/11.8.html"  target="main-iframe">11.8部件模块</a></li>
+            <li><a href="11/11.8.1.html"  target="main-iframe">11.8.1新增(编辑)部件模块</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- End #main-nav -->
+    </div>
+  </div>
+  <!-- End #sidebar -->
+  <div id="main-all">
+    <div id="main">
+      <div class="denglu">欢迎来到塔机动态管理系统使用说明！</div>
+      <iframe id="main-iframe" src="content/gongneng.html" name="main-iframe" width="100%" frameborder="0" onLoad="iFrameHeight()" scrolling="no"> </iframe>
+    </div>
+  </div>
+  <!-- End #main-content -->
+  <script type="text/javascript" language="javascript"> 
+function iFrameHeight() { 
+var ifm= document.getElementById("main-iframe"); 
+var subWeb = document.frames ? document.frames["main-iframe"].document : ifm.contentDocument; 
+if(ifm != null && subWeb != null) { 
+ifm.height = subWeb.body.scrollHeight; 
+} 
+} 
+</script>
+</div>
+</div>
+</body>
+</html>

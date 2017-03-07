@@ -1,0 +1,70 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+
+/* Eric Meyer's Reset Stylesheet: http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+.px48{ width:48px; height:48px;vertical-align:middle;} 
+.px32{ width:32px; height:32px;}        
+.px24{ width:24px; height:24px;}
+.px18{ width:18px; height:18px;padding: 4px 5px 0px 5px;} 
+.px16{ width:18px; height:18px;} 
+.px200{width:200px;}    
+.px4z{ width:62px;}
+.chebox{ width:30px; text-align:center;}
+.date{ width:80px;}
+.time{ width:123px;}
+.picture1{ width:30px;}
+.picture2{ width:50px;}
+.picture2r{ width:50px; text-align:right; padding-right:5px}
+.picture3{ width:70px;}
+.picture3r{ width:70px; text-align:right;}
+.picture4{ width:90px;}
+.picture5{ width:115px;}
+.picture6{ width:135px;}
+.picture7{ width:155px;}
+.address{ width:250px;}
+.line1px{height:1px;width:100%;background:#666666;}
+.delete{ padding-left:5px;}
+.edit{ padding-left:5px;}

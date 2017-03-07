@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>塔机动态管理系统</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="../resources/css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="../resources/css/invalid.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../resources/css/select.css" type="text/css" media="screen" />
+</head>
+<body id="main-content">
+<div class="content-box">
+  <!-- Start Content Box -->
+  <div class="content-box-header">
+    <h3>4.1、资产调度</h3>
+  </div>
+  <!-- End .content-box-header -->
+  <div class="content-box-content"><img src="../images/4.1.jpg" />
+   <p class="p0">业务背景：</p>
+  <p class="p1">一、调度塔机、零部件的作业采用流程管理的方式来实施。调度单状态共有5个:<br />
+  1. 待签核：新增一张调度单的初始状态，经过上级主管签核後的调度单才可以实施下一步的工作。<br />
+2. 待调度：被签核同意的调度单状态。<br />
+3. 已作废：该调度单已作废，（同意签核后，发现信息不对，本条信息就能作废注意权限设置）。<br />
+4. 待提交：只保存了调度单信息，能够返回修改。<br />
+5. 调度结束：指该调度单已经完成了调度，即资产已经到达目的地。
+</p>
+<p class="p1">二、调度单实施流程：待签核->同意->待调度->确认调度->调度结束。<br/>
+系统中没有签核不同意：线下处理后再签核调度。
+</p>
+
+    <p class="p0">说明：</p>
+    1、<img src="../resources/images/search.png" />进行调度单查询，查询条件：项目名称、塔机编号、调度单号、调度单状态、调度时间；<br/>
+      2、<img src="../resources/images/add.png" />新增调度单,<img src="../resources/images/download.png" />导出查询的所有调度单内容;<br />
+    3、<img src="../resources/images/success-icon.png" />确认调度、<img src="../resources/images/pencil.png" />编辑、和<img src="../resources/images/cross.png" />删除调度单资料;<br />
+</p>
+  </div>
+</div>
+</body>
+</html>

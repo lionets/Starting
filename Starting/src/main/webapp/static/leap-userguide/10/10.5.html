@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>塔机动态管理系统</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="../resources/css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="../resources/css/invalid.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../resources/css/select.css" type="text/css" media="screen" />
+</head>
+<body id="main-content">
+<div class="content-box">
+  <!-- Start Content Box -->
+  <div class="content-box-header">
+    <h3>10.5、GPS管理</h3>
+  </div>
+  <!-- End .content-box-header -->
+  <div class="content-box-content"><img src="../images/10.5.jpg" />
+    <p class="p0">业务背景：</p>
+    <p class="p1">定位地点：gps 对应的sim卡号返回的经纬度所对应的地点，精确到 市一级;<br/>
+项目地点：对应项目信息中的项目地点;<br/>
+信号：异常、正常，超过 12小时没有回报的算异常;<br/>
+状态：返修、在使用 （返修状态：没有绑定塔机编号的）;<br/>
+编辑中的“返修”功能:<br/>
+1. 点击返修，跳转至“新增GPS维修”页面；<br/>
+2.填写GPS维修信息，并保存。（GPS 的SIM卡号与塔机编号解除绑定，GPS管理中状态置为“返修”）；<br/>
+3.取消GPS维修信息，则返回至GPS管理的编辑页面。
+</p>
+    <p class="p0">说明：</p>
+<p class="p1">
+    1、<img src="../resources/images/search.png" />进行GPS查询，查询条件：塔机编号、sim卡号、防水盒号、信号；<br/>
+      2、<img src="../resources/images/add.png" />新增GPS信息,<img src="../resources/images/download.png" />导出查询的所有GPS内容;<br />
+    3、<img src="../resources/images/pencil.png" />编辑、和<img src="../resources/images/cross.png" />删除GPS信息.<br />
+    </p>
+  </div>
+</div>
+</body>
+</html>

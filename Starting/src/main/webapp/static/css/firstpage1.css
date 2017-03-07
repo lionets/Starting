@@ -1,0 +1,305 @@
+body#firstpage {
+	color: #fff;
+}
+
+#firstpage_logo{
+height:67px;}
+#firstpage #tathong_logo{
+			  
+			   background:url(../../images/tathonglogo3.png) no-repeat;
+			   background-size:50px 50px;
+			   width:185px;
+			   height:65px;
+			   padding-left:58px; float:left;
+			   clear:left;
+			    }
+#toggle {
+display: block;
+cursor: pointer;
+float:right;
+clear:right;
+transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1) 0s;
+margin-top: 10px;
+}
+#toggle img {
+display: block;
+margin-top: 3px;
+}
+#firstpage #menu {	
+	padding-top:0px;
+}
+#firstpage #wai_box {
+    max-width: 1100px;
+	 height:372px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	background: white;
+	display: block;
+	padding: 10px 7px 30px 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#firstpage {
+	width: 970px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-top: 0px;
+}
+
+#firstpage .lanrenzhijia_box img {
+	display: block;
+	margin:auto;
+	padding-top:50px;
+	width:60px;
+	height:60px;
+}
+#firstpage .red {
+	background:#dd3a3a;
+	background-size:160px 160px;
+	width:160px;
+	height:160px;
+}
+#firstpage .brown {
+	background:#757c7f;
+     background-size:160px 160px;
+	 width:160px;
+	height:160px;
+}
+#firstpage .green {
+	background:#72b740;
+		background-size:160px 160px;
+		width:160px;
+	height:160px;
+}
+#firstpage .blue {
+background: #0a71da;
+
+		background-size:160px 160px;
+		width:160px;
+	height:160px;
+}
+#firstpage .pink {
+	background:#dd3c9f;
+		background-size:160px 160px;
+		width:160px;
+	height:160px;
+}
+#firstpage .yellow {
+	background:#dca400;
+		background-size:160px 160px;
+		width:160px;
+	height:160px;
+}
+#firstpage .orange {
+	background:#dd6d36;
+		background-size:160px 160px;
+		width:160px;
+	height:160px;
+}
+#firstpage p{ padding:10px 0 0 0;}
+#firstpage .word {
+	color:#fff;
+	font-size:15px;
+	font-weight:bold;
+	z-index: 40;
+	position: absolute;
+	top:120px;
+	width:160px;
+	height:30px;
+	background:rgba(0, 0, 0, 0.3);
+		-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 4px;
+}
+#firstpage .word label{
+margin-top:5px;}
+#lanrenzhijia_box #firstpage #wai_box {
+	width: 970px;
+	overflow: hidden;
+	position: relative;
+}
+#firstpage #wai_box .lanrenzhijia_box .title {
+	font-family: "΢���ź�";
+	font-size: 14px;
+	line-height: 30px;
+	color: #FFFFFF;
+	background:rgba(225, 225, 225, 0.6);
+    filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#6B0000, endColorstr=#6B0000);
+	display:block;
+	height:160px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 30;
+	width:160px;
+	text-indent: 1em;
+	left: 0px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+#firstpage #stock{
+display:none;
+	height:160px;
+	z-index: 40;
+	text-indent: 1em;
+}
+#firstpage #wai_box .lanrenzhijia_box .title .title_head {
+}
+#firstpage .lanrenzhijia_box {
+	position: absolute; width:970px;
+	left: 0px;
+	top: 0px;
+	background:#FFFFFF;-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px; 
+}
+#firstpage .lanrenzhijia_box a.img:hover {
+    width:100px; height:100px;padding-top:30px;
+	outline:none;
+}
+
+#firstpage .lanrenzhijia_box ul {
+	float: left; clear:left;
+	display: block; 
+	padding:0px 10px;
+}
+#firstpage .lanrenzhijia_box li {
+	float: left;
+	font-size: 0px;
+	line-height: 0px;
+	position: relative;
+	margin:15px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+
+
+}
+<!-- -->
+
+.navlist{position:absolute;right:130PX;top:-40PX}
+.nav-btn{float:left;margin-left:60px;color:#666;vertical-align:middle;text-decoration:none}
+.nav-btn span{background:url(../images/broswer_home.png) no-repeat -29px -145px;display:inline-block;width:16px;height:16px;margin-left:4px;vertical-align:middle;*height:12px;*vertical-align:middle;*cursor:pointer;*letter-spacing:0;*margin-left:0;*background-position:-26px -145px}
+.btn-active span{background:url(../images/broswer_home.png) no-repeat -8px -145px;*background-position:-5px -145px}
+.expand{height:0px;;overflow:hidden;position:relative;width:100%; }
+.expand .download{height:46px;width:100%;}
+.expand .download .item{float:left;width:100%}
+.expand .download .item2{float:left;width:200%}
+.expand .download .item-active{display:block}
+.expand .close-btn{width:120px;height:20px;background:url(../images/broswer_home.png) no-repeat -13px -117px;position:absolute;left:50%;bottom:-2px;margin-left:-60px;cursor:pointer;}
+.download .download-list{text-align:center;height:46px;padding:0px;}
+.download .download-list .btn{display:inline-block;text-decoration:none;color:#747474;font-size:16px;margin:0 10px;cursor:pointer}
+.download .download-list .btn:hover{color:#939393}
+.download-list .btn .icon{background-repeat:no-repeat;height:46px;width:46px;float:left;}
+.download-list .btn .text{float:left;padding:16px 0 0px 16px}
+.download-list .zj .icon{background-position:-4px 0}
+.download .download-list .view .icon{ background:url(../images/icons/64x64/view-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .view:hover .icon{ background:url(../images/icons/64x64/view-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .tower .icon{ background:url(../images/icons/64x64/tower-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .tower:hover .icon{ background:url(../images/icons/64x64/tower-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .parts .icon{ background:url(../images/icons/64x64/DIY-Screw-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .parts:hover .icon{ background:url(../images/icons/64x64/DIY-Screw-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .stock .icon{ background:url(../images/icons/64x64/Ecommerce-Buy-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .stock:hover .icon{ background:url(../images/icons/64x64/Ecommerce-Buy-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .rent .icon{ background:url(../images/icons/64x64/Ecommerce-Checkout-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .rent:hover .icon{ background:url(../images/icons/64x64/Ecommerce-Checkout-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .receive .icon{ background:url(../images/icons/64x64/Catering-Delivery-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .receive:hover .icon{ background:url(../images/icons/64x64/Catering-Delivery-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .project .icon{ background:url(../images/icons/64x64/Charts-Combo-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .project:hover .icon{ background:url(../images/icons/64x64/Charts-Combo-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .up .icon{ background:url(../images/icons/64x64/Upload-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .up:hover .icon{ background:url(../images/icons/64x64/Upload-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .check .icon{ background:url(../images/icons/64x64/Very-Basic-Checkmark-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .check:hover .icon{ background:url(../images/icons/64x64/Very-Basic-Checkmark-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .maintain .icon{ background:url(../images/icons/64x64/wrench-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .maintain:hover .icon{ background:url(../images/icons/64x64/wrench-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .dispatch .icon{ background:url(../images/icons/64x64/truck-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .dispatch:hover .icon{ background:url(../images/icons/64x64/truck-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .send .icon{ background:url(../images/icons/64x64/Buzz-Send-file-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .send:hover .icon{ background:url(../images/icons/64x64/Buzz-Send-file-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .statu .icon{ background:url(../images/icons/64x64/GPS-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .statu:hover .icon{ background:url(../images/icons/64x64/GPS-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .history .icon{ background:url(../images/icons/64x64/Polyline-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .history:hover .icon{ background:url(../images/icons/64x64/Polyline-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .locate .icon{ background:url(../images/icons/64x64/Map-marker-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .locate:hover .icon{ background:url(../images/icons/64x64/Map-marker-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .free .icon{ background:url(../images/icons/64x64/Catering-Cafe-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .free:hover .icon{ background:url(../images/icons/64x64/Catering-Cafe-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .company .icon{ background:url(../images/icons/64x64/Conference-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .company:hover .icon{ background:url(../images/icons/64x64/Conference-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .user .icon{ background:url(../images/icons/64x64/Manager-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .user:hover .icon{ background:url(../images/icons/64x64/Manager-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .role .icon{ background:url(../images/icons/64x64/Role-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .role:hover .icon{ background:url(../images/icons/64x64/Role-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+
+.download .download-list .password .icon{ background:url(../images/icons/64x64/Security-Key-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .password:hover .icon{ background:url(../images/icons/64x64/Security-Key-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .data .icon{ background:url(../images/icons/64x64/Coins-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .data:hover .icon{ background:url(../images/icons/64x64/Coins-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .client .icon{ background:url(../images/icons/64x64/business-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .client:hover .icon{ background:url(../images/icons/64x64/business-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .warehouse .icon{ background:url(../images/icons/64x64/warehouse-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .warehouse:hover .icon{ background:url(../images/icons/64x64/warehouse-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .upload .icon{ background:url(../images/icons/64x64/Upload-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .upload:hover .icon{ background:url(../images/icons/64x64/Upload-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .back .icon{ background:url(../images/icons/64x64/Back-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .back:hover .icon{ background:url(../images/icons/64x64/Back-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .work .icon{ background:url(../images/icons/64x64/Work-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .work:hover .icon{ background:url(../images/icons/64x64/Work-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .kanban .icon{ background:url(../images/icons/64x64/Data-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .kanban:hover .icon{ background:url(../images/icons/64x64/Data-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .gps .icon{ background:url(../images/icons/64x64/gpsm-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .gps:hover .icon{ background:url(../images/icons/64x64/gpsm-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .position .icon{ background:url(../images/icons/64x64/position-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .position:hover .icon{ background:url(../images/icons/64x64/position-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .department .icon{ background:url(../images/icons/64x64/Department-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .department:hover .icon{ background:url(../images/icons/64x64/Department-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .plan .icon{ background:url(../images/icons/64x64/Plan-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .plan:hover .icon{ background:url(../images/icons/64x64/Plan-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+
+.download .download-list .use .icon{ background:url(../images/icons/64x64/use-icon.png) no-repeat top left; background-size:46px 46px;}
+.download .download-list .use:hover .icon{ background:url(../images/icons/64x64/use-hover-icon.png) no-repeat top left; background-size:46px 46px;}
+.top-nav .nav-bottom-bg{height:7px;_font-size:1px;background-color:#fff}
+
+.btm{ margin:30px auto;}
+.btm p{ font:normal 12px/24px 'Microsoft YaHei'; text-align:center;}
+/* �������?����֮�� www.lanrenzhijia.com */
