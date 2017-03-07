@@ -22,7 +22,6 @@
 	
 	<context:property-placeholder location="classpath:/application.properties" />
 	
-	
 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${jdbc.driver}" />
