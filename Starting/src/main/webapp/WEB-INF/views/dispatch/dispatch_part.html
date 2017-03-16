@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>塔机动态管理系统</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="../resources/css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="../resources/css/invalid.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../resources/css/select.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../resources/scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../resources/scripts/facebox.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.datePicker.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.date.js"></script>
+<script type="text/javascript" src="../resources/scripts/calendar.js"></script>
+<SCRIPT src="../resources/scripts/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT src="../resources/scripts/jQselect.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+	$(document).ready(function() {
+		$("#a").selectbox();
+		$("#b").selectbox();
+		$("#c").selectbox();
+		$("#d").selectbox();
+		$("#e").selectbox();
+		$("#f").selectbox();
+	});
+	</SCRIPT>
+</head>
+<body>
+<div id="main-content">
+  <!-- Main Content Section with everything -->
+  <div class="content-box">
+    <!-- Start Content Box -->
+    <div class="content-box-header">
+      <h3>调度零部件</h3>
+    </div>
+    <div class="content-box-content">
+      <div class="tab-content default-tab" id="tab1">
+        <form action="" method="post">
+          <table   class="edit-table">
+            <tr>
+              <td><label><b style="color:#FF0000">*</b>零部件名称:</label></td>
+              <td ><input type="text" list="parts_list" name="link" />
+                          <datalist id="parts_list">
+                  <option label="臂" value="臂"></option>
+                  <option  label="提升机构" value="提升机构"></option>
+                  <option label="回转机构" value="回转机构"></option>
+                  <option  label="变频机构" value="变频机构"></option>
+                  <option label="电源电缆" value="电源电缆" ></option>
+                  <option label="地脚" value="地脚" ></option>
+                  <option label="钢丝绳" value="钢丝绳" ></option>
+                  </datalist></td>
+              <td><label>零部件型号:</label></td>
+              <td><input type="text" list="model_list1" name="link" />
+                          <datalist id="model_list1">
+                  <option label="L68B1" value="L68B1"></option>
+                  <option label="70米" value="70米"></option>
+                </datalist>
+              </td>
+              <td><label>对应塔机型号:</label></td>
+              <td><input type="text" list="modle_list" name="link" />
+                          <datalist id="modle_list">
+                          <option label="F0/23B-10T" value="F0/23B-10T"></option>
+                          <option label="FH60/15-10T" value="FH60/15-10T" > </option>
+                          <option label="ST55/13-6T" value="ST55/13-6T" ></option>
+                          <option label="ST5515B-8T" value="ST5515B-8T" ></option>
+                          <option label="ST60/15-10T" value="ST60/15-10T" ></option>
+                          <option label="ST70/27-16T" value="ST70/27-16T" ></option>
+                          <option label="ST70/30-12T" value="ST70/30-12T" ></option>
+                          <option label="STT133-6T" value="STT133-6T" ></option>
+                          <option label="STT200-10T" value="STT200-10T" ></option>
+                          <option label="STT200-12T" value="STT200-12T" ></option>
+                          <option label="STT293-12T" value="STT293-12T" ></option>
+                          <option label="STT293-18T" value="STT293-18T" ></option>
+                          <option label="STT403-24T" value="STT403-24T" ></option>
+                          <option label="STT553-24T" value="STT553-24T" ></option>
+                        </datalist></td>
+            </tr>
+            <tr>
+              <td><label>所在区域:</label></td>
+              <td><input type="text" list="area_list" name="link" />
+                      <datalist id="area_list">
+                    <option label="华北区" value="华北区"></option>
+                    <option label="东北区" value="东北区"></option>
+                    <option label="华东区" value="华东区"></option>
+                    <option label="华南区" value="华南区"></option>
+                    <option label="西北区" value="西北区"></option>
+                    <option label="西南区" value="西南区"></option>
+                  </datalist>
+              </td>
+             <td><label>所在省份:</label></td>
+              <td> <input type="text" list="province_list" name="link" />
+                      <datalist id="province_list">
+                    <option label="北京市" value="北京市"></option>
+                    <option label="上海市" value="上海市"></option>
+                    <option label="天津市" value="天津市"></option>
+                    <option label="江苏省" value="江苏省"></option>
+                  </datalist></td>
+             <td><label>所在位置:</label></td>
+              <td><input type="text" list="city_list" name="link" />
+                      <datalist id="city_list">
+                    <option label="顺义区" value="顺义区"> </option>
+                  </datalist></td>
+            </tr>
+            <tr>
+              <td colspan="5"></td>
+              <td><a class="button button_position" href="#" title="查询"><img src="../resources/images/icons/search_icon.png" class="px18"/></a> </td>
+            </tr>
+          </table>
+         
+          <table class="seach-table">
+            <tr>
+              <td width="80px"><b> 调度至塔机</b></td>
+              <td><div class="select">
+                  <select id="f" style="DISPLAY: none" name="f">
+                    <option>001</option>
+                    <option>002</option>
+                    <option>003</option>
+                    <option>004</option>
+                    <option>005</option>
+                    <option>006</option>
+                  </select>
+                </div></td>
+                <td align="right"><a ><img src="../resources/images/icons/Down-icon.png" alt="选择" title="选择"/></a></td>
+            </tr>
+          </table>
+          <table >
+            <thead>
+              <tr>
+                <th width="18"><input class="check-all" type="checkbox" /></th>
+                <th scope="col" class="chebox">项次</th>
+                <th  scope="col">零部件名称</th>
+                <th  scope="col"><span class="tblcx">零部件</span>型号</th>
+                <th  scope="col">零部件编号</th>
+                <th  scope="col">对应塔机型号</th>
+                <th  scope="col">数量</th>
+                <th  scope="col" >单位</th>
+                <th  scope="col" >状态</th>
+                <th  scope="col" >所在位置</th>
+                <th  scope="col" class="picture1">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>1</td>
+                <td>标准节</td>
+                <td>L64A1</td>
+                <td>BJTHZ081001</td>
+                <td>&nbsp;</td>
+                <td>12</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a ><img src="../resources/images/icons/Down-icon.png" alt="选择" title="选择"/></a></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>2</td>
+                <td>附墙框</td>
+                <td>FL46</td>
+                <td>BJTHZ081002</td>
+                <td>&nbsp;</td>
+                <td>1</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a ><img src="../resources/images/icons/Down-icon.png" alt="选择" title="选择"/></a></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>3</td>
+                <td>固定脚</td>
+                <td>D46</td>
+                <td>BJTHZ081003</td>
+                <td>&nbsp;</td>
+                <td>2</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a ><img src="../resources/images/icons/Down-icon.png" alt="选择" title="选择"/></a></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="11"><div class="bulk-actions align-left">
+                    <label>共有<b>200</b>条数据</label>
+                  </div>
+                  <div class="pagination"> <a href="#" title="First Page">|&lt;</a><a href="#" title="Previous Page">&lt;</a> <a href="#" class="number current" title="1">1</a> <a href="#" class="number" title="2">2</a> <a href="#" class="number" title="3">3</a> <a href="#" class="number" title="4">4</a> <a href="#" title="Next Page">&gt;</a><a href="#" title="Last Page">&gt;|</a> </div>
+                  <!-- End .pagination -->
+                  <div class="clear"></div></td>
+              </tr>
+            </tfoot>
+          </table>
+         
+          <table border="0" class="edit-table">
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="2"><a class="button_new" href="#" title="保存"><img src="../resources/images/icons/save-icon.png" class="px18"/></a> <a class="button_new" onclick="window.close()" title="返回"><img src="../resources/images/icons/back_icon.png" class="px18"/></a> </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

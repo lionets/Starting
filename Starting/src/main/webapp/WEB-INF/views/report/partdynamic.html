@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>塔机动态管理系统</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="../resources/css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="../resources/css/invalid.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../resources/css/select.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../resources/scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../resources/scripts/facebox.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.datePicker.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.date.js"></script>
+<script type="text/javascript" src="../resources/scripts/calendar.js"></script>
+<SCRIPT src="../resources/scripts/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT src="../resources/scripts/jQselect.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+	$(document).ready(function() {
+		$("#a").selectbox();
+		$("#b").selectbox();
+		$("#c").selectbox();
+		$("#d").selectbox();
+		$("#e").selectbox();
+		$("#f").selectbox();
+	});
+	</SCRIPT>
+</head>
+<body>
+<div id="main-content">
+  <div class="clear"></div>
+  <!-- End .clear -->
+  <div class="content-box">
+    <!-- Start Content Box -->
+    <div class="content-box-header">
+      <h3>零部件动态汇总表</h3>
+    </div>
+    <!-- End .content-box-header -->
+    <div class="content-box-content">
+      <div class="tab-content default-tab" id="tab1">
+        <form action="" method="post">
+          <div class="search-actions">
+            <div class="search-condition">
+              <div class="search-condition-show">
+                <table class="seach-table">
+                  <tr>
+                    <td><label>管理公司:</label></td>
+      <td ><input type="text" list="company_list" name="link" />
+                      <datalist id="company_list">
+                         <option label="北京达丰" value="北京达丰"></option>
+                        <option label="北京永茂" value="北京永茂"></option>
+                        <option label="上海达丰" value="上海达丰"></option>
+                        <option label="江苏正和达丰" value="江苏正和达丰"></option>
+                        <option label="四川达丰" value="四川达丰" > </option>
+                        <option label="中核华兴达丰" value="中核华兴达丰"></option>
+                      </datalist></td>
+      <td ><label>零部件名称:</label></td>
+       <td ><input type="text" list="parts_list" name="link" />
+                          <datalist id="parts_list">
+                  <option label="臂" value="臂"></option>
+                  <option  label="提升机构" value="提升机构"></option>
+                  <option label="回转机构" value="回转机构"></option>
+                  <option  label="变频机构" value="变频机构"></option>
+                  <option label="电源电缆" value="电源电缆" ></option>
+                  <option label="地脚" value="地脚" ></option>
+                  <option label="钢丝绳" value="钢丝绳" ></option>
+                  </datalist></td>
+                  </tr>
+                </table>
+              </div>
+              <div id="search-condition-hidden">
+                <table class="seach-table">
+                      <tr>
+      <td ><label>调度单号:</label></td>
+      <td ><input name="Input" type="text" ></td>
+      <td><label>使用塔机编号:</label></td>
+      <td ><input type="text" list="number_list" name="link" />
+                          <datalist id="number_list">
+                  <option label="1" value="1"></option>
+                  <option label="2" value="2"></option>
+                  <option label="3" value="3"></option>
+                 </datalist></td>
+      </tr>
+  </table>
+ </div>
+            </div>
+            <div class="search-button"> <a class="button button_position" href="#" title="查询"><img src="../resources/images/icons/search_icon.png" class="px18"/></a><a class="button button_position" href="#" title="导出"><img src="../resources/images/icons/export_icon.png" class="px18"/></a> </div>
+           
+            <div class="clear"></div>
+          </div>
+        </form>
+        <table>
+          <thead>
+          <tr>
+            <th scope="col" class="chebox">项次</th>
+            <th  scope="col">零部件名称</th>
+            <th  scope="col" >零部件编号</th>
+            <th  scope="col" >零部件型号</th>
+            <th  scope="col" >对应塔机型号</th>
+            <th  scope="col" >所在位置</th>
+            <th  scope="col" >区域</th>
+            <th  scope="col" >省份</th>
+            <th  scope="col" >城市</th>
+            <th  scope="col">管理部门</th>
+            <th  scope="col">调度单号</th>
+            <th  scope="col">数量</th>
+            <th  scope="col">零部件状态</th>
+            <th  scope="col">管理公司</th>
+            <th  scope="col">产权公司</th>
+            </tr></thead><tbody>
+		<tr>
+		  <td>1</td>
+		  <td>ZD-006</td>
+		  <td>ST50/15A</td>
+		  <td>北安泰诚机械塔机有限责任公司</td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td>华东区</td>
+		  <td>安徽省</td>
+		  <td>合肥市</td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td>1</td>
+		  <td>在使用</td>
+		  <td>北京达丰</td>
+		  <td>北京达丰</td>
+		  </tr>
+        <tr>
+          <td>2</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>3</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>4</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>5</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>6</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>7</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>8</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>9</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>	
+        <tr>
+          <td>10</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>				
+              </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="15"><div class="bulk-actions align-left">
+                  <label>共有<b>200</b>条数据</label>
+                </div>
+                <div class="pagination"> <a href="#" title="First Page">|&lt;</a><a href="#" title="Previous Page">&lt;</a> <a href="#" class="number current" title="1">1</a> <a href="#" class="number" title="2">2</a> <a href="#" class="number" title="3">3</a> <a href="#" class="number" title="4">4</a> <a href="#" title="Next Page">&gt;</a><a href="#" title="Last Page">&gt;|</a> </div>
+                <!-- End .pagination -->
+                <div class="clear"></div></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- End #tab1 -->
+    </div>
+    <!-- End .content-box-content -->
+  </div>
+  <!-- End .content-box -->
+  <div class="clear"></div>
+</div>
+<!-- End #main-content -->
+<div id="footer">
+<small>達豐中國 地址：上海市长宁区天山西路1068号联强国际D栋4楼 电话:+86 21 60825373 </small><br /><br />
+ <small>系统开发 Copyright © 2015 上海乔罗网络科技有限公司 </small> </div>
+<!-- End #footer -->
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>塔机动态管理系统</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="../resources/css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="../resources/css/invalid.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../resources/css/select.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../resources/scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../resources/scripts/facebox.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.datePicker.js"></script>
+<script type="text/javascript" src="../resources/scripts/jquery.date.js"></script>
+<script type="text/javascript" src="../resources/scripts/calendar.js"></script>
+<SCRIPT src="../resources/scripts/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT src="../resources/scripts/jQselect.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+	$(document).ready(function() {
+		$("#a").selectbox();
+		$("#b").selectbox();
+		$("#c").selectbox();
+		$("#d").selectbox();
+		$("#e").selectbox();
+		$("#f").selectbox();
+	});
+	</SCRIPT>
+</head>
+<body>
+<div id="main-content">
+  <div class="clear"></div>
+  <!-- End .clear -->
+  <div class="content-box">
+    <!-- Start Content Box -->
+    <div class="content-box-header">
+      <h3>塔机处置明细表</h3>
+    </div>
+    <!-- End .content-box-header -->
+    <div class="content-box-content">
+      <div class="tab-content default-tab" id="tab1">
+        <form action="" method="post">
+          <div class="search-actions">
+            <div class="search-condition">
+             
+                <table class="seach-table">
+                  <tr>
+                  <td><label>统计日期:</label>  
+        </td>
+      <td ><input type="text" readonly="ture"  onclick="new Calendar().show(this);">
+        ~
+        <input type="text" readonly="ture"  onclick="new Calendar().show(this);"></td>
+                    <td><label>统计数量:</label></td>
+      <td ><input type="text"/></td>
+      
+    </tr>
+  </table>
+ </div>
+            <div class="search-button"> <a class="button button_position" href="#" title="查询"><img src="../resources/images/icons/search_icon.png" class="px18"/></a> <a class="button button_position" href="#" title="导出"><img src="../resources/images/icons/export_icon.png" class="px18"/></a> </div>
+            <div class="clear"></div>
+          </div>
+        </form>
+        <table>
+          <thead>
+            <tr>
+            <th  scope="col">项次</th>
+                                 <th  scope="col">塔机编号</th>
+                                 <th  scope="col">塔机来源</th>
+                                 <th  scope="col">采购合同编号</th>
+                                 <th  scope="col">塔机型号</th>
+                                 <th  scope="col" >产权公司</th>
+                                 <th  scope="col" >管理公司</th>
+                                 <th  scope="col">处置时间</th>
+                                 <th  scope="col">处置方式</th>
+                               </tr></thead>
+                               <tbody>
+                               <tr>
+                                 <td>1</td>
+                                 <td>ST5515B001</td>
+                                 <td>SHTH融资</td>
+                                 <td>THZM090530-F-001</td>
+                                 <td>ST5515B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-12</td>
+                                 <td>买出</td>
+                               </tr>
+                               <tr>
+                                 <td>2</td>
+                                 <td>ST5515B002</td>
+                                 <td>SHTH融资</td>
+                                 <td>THZM090530-F-001</td>
+                                 <td>ST5515B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-10-11</td>
+                                 <td>买出</td>
+                               </tr>
+                               <tr>
+                                 <td>3</td>
+                                 <td>ST5515B003</td>
+                                 <td>SHTH融资</td>
+                                 <td>THZM090530-F-001</td>
+                                 <td>ST5515B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-15</td>
+                                 <td>买出</td>
+                               </tr>
+                               <tr>
+                                 <td>4</td>
+                                 <td>ST5515B004</td>
+                                 <td>SHTH融资</td>
+                                 <td>THZM090530-F-001</td>
+                                 <td>ST5515B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-19</td>
+                                 <td>转让</td>
+                               </tr>
+                               <tr>
+                                 <td>5</td>
+                                 <td>ST5515B005</td>
+                                 <td>SHTH融资</td>
+                                 <td>THZM090530-F-001</td>
+                                 <td>ST5515B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-20</td>
+                                 <td>转让</td>
+                               </tr>
+                               <tr>
+                                 <td>6</td>
+                                 <td>F0/23B005</td>
+                                 <td>自有</td>
+                                 <td>THZM090530-F-004</td>
+                                 <td>F0/23B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-21</td>
+                                 <td>买出</td>
+                               </tr>
+                               <tr>
+                                 <td>7</td>
+                                 <td>F0/23B001</td>
+                                 <td>自有</td>
+                                 <td>THZM090530-F-004</td>
+                                 <td>F0/23B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-22</td>
+                                 <td>买出</td>
+                               </tr>
+                               <tr>
+                                 <td>8</td>
+                                 <td>F0/23B002</td>
+                                 <td>自有</td>
+                                 <td>THZM090530-F-004</td>
+                                 <td>F0/23B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-23</td>
+                                 <td>报废</td>
+                               </tr>
+                               <tr>
+                                 <td>9</td>
+                                 <td>F0/23B003</td>
+                                 <td>自有</td>
+                                 <td>THZM090530-F-004</td>
+                                 <td>F0/23B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-24</td>
+                                 <td>报废</td>
+                               </tr>
+                               <tr>
+                                 <td>10</td>
+                                 <td>F0/23B004</td>
+                                 <td>自有</td>
+                                 <td>THZM090530-F-004</td>
+                                 <td>F0/23B</td>
+                                 <td>北京达丰</td>
+                                 <td>北京达丰</td>
+                                 <td>2010-12-25</td>
+                                 <td>买出</td>
+                               </tr>
+                                      </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="9"><div class="bulk-actions align-left">
+                  <label>共有<b>200</b>条数据</label>
+                </div>
+                <div class="pagination"> <a href="#" title="First Page">|&lt;</a><a href="#" title="Previous Page">&lt;</a> <a href="#" class="number current" title="1">1</a> <a href="#" class="number" title="2">2</a> <a href="#" class="number" title="3">3</a> <a href="#" class="number" title="4">4</a> <a href="#" title="Next Page">&gt;</a><a href="#" title="Last Page">&gt;|</a> </div>
+                <!-- End .pagination -->
+                <div class="clear"></div></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- End #tab1 -->
+    </div>
+    <!-- End .content-box-content -->
+  </div>
+  <!-- End .content-box -->
+  <div class="clear"></div>
+</div>
+<!-- End #main-content -->
+<div id="footer">
+<small>達豐中國 地址：上海市长宁区天山西路1068号联强国际D栋4楼 电话:+86 21 60825373 </small><br /><br />
+ <small>系统开发 Copyright © 2015 上海乔罗网络科技有限公司 </small> </div>
+<!-- End #footer -->
+</body>
+
+</html>
