@@ -18,10 +18,13 @@
 <link rel="stylesheet" href="<%=basePath %>static/css/invalid.css" type="text/css" media="screen" />
 
 <link rel="stylesheet" href="<%=basePath %>static/css/firstpage1.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<%=basePath %>static/js/jquery-easyui-1.4.1/themes/default/easyui.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<%=basePath %>static/js/jquery-easyui-1.4.1/themes/icon.css" type="text/css" media="screen" />
 
 <script type="text/javascript" src="<%=basePath %>static/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>static/js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="<%=basePath %>static/js/firstpage.js"></script>
-<SCRIPT src="<%=basePath %>static/js/jquery.js" type=text/javascript></SCRIPT>
+
 
 </head>
 <body>
@@ -85,7 +88,7 @@
     <div id="expandZone" class="expand active" >
       <div class="download">
         <div id="stockItem" class="item">
-          <div class="download-list"> <a href="<%=basePath %>purchase/init/1" class="btn stock"  ><span class="icon"></span><span class="text">采购合同</span></a> <a href="<%=basePath %>purchase/init/2" class="btn rent"  ><span class="icon"></span><span class="text">外租合同</span></a> <a href="<%=basePath %>purchase/init/3" class="btn receive" ><span class="icon"></span><span class="text">资产到货</span></a> </div>
+          <div class="download-list"> <a href="#" onclick="ajaxMethod();" class="btn stock"  ><span class="icon"></span><span class="text">采购合同</span></a> <a href="<%=basePath %>purchase/init/2" class="btn rent"  ><span class="icon"></span><span class="text">外租合同</span></a> <a href="<%=basePath %>purchase/init/3" class="btn receive" ><span class="icon"></span><span class="text">资产到货</span></a> </div>
         </div>
         <div id="projectItem" class="item">
           <div class="download-list"><a href="<%=basePath %>project/init/1" class="btn project"  ><span class="icon"></span><span class="text">项目资料</span></a> <a href="<%=basePath %>contractPro/init/2" class="btn plan"  ><span class="icon"></span><span class="text">合同信息</span></a><a href="<%=basePath %>contractPro/init/3" class="btn use"  ><span class="icon"></span><span class="text">项目进度</span></a> <a href="<%=basePath %>project/init/4" class="btn rent" ><span class="icon"></span><span class="text">租赁意向</span></a> </div>
@@ -126,6 +129,29 @@
         </div>
         <div id="next41" style=" float:right; padding-right:20px "> <a href="javascript:void(0);" onmouseover="overMar4(0);" onmouseout="outMar4();"><img src="<%=basePath %>static/images/arrowright.png" style="width:10px; height:18px; padding-top:14px;"></a></div>
         <script>
+        
+        
+        function ajaxMethod(){
+        	$.ajax({
+				async : false,
+				cache : false,
+				type : 'POST',
+				//data :$("#addCustomerForm").serialize(),
+				url :'<%=basePath %>ajaxMethod',
+				error : function() {// 请求失败处理函数
+					$.messager.alert('错误','提交请求失败!','error');
+				},
+				success : function(data){
+					if('n' == data){
+						$.messager.alert('失败','客户信息新增失败!','error');
+					}else{
+						$.messager.alert('成功','客户信息新增成功!','info',function(){
+							
+						});
+					}
+				}
+			});
+        }
 var speed4=5//速度数值越大速度越慢
 var MyMar4;
 document.getElementById("demo42").innerHTML=document.getElementById("demo41").innerHTML;
