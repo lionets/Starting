@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>SuiNav</title>
+<title>SuiNav www.jq22.com</title>
 <link rel="stylesheet" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
 <link rel="stylesheet" type="text/css" href="<%=basePath %>static/SuiNav20161023/css/sui.nav.css" />
 <script src='http://libs.baidu.com/jquery/2.1.1/jquery.min.js'></script>
